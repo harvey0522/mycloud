@@ -1,0 +1,11 @@
+server:
+  port: 8809
+spring:
+  application:
+    name: my-eureka-consume
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8765/eureka/,http://localhost:8764/eureka/
+  instance:
+    prefer-ip-address: true
