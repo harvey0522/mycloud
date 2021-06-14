@@ -6,6 +6,9 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8765/eureka/,http://localhost:8764/eureka/
+      defaultZone: http://localhost:8765/eureka/
   instance:
     prefer-ip-address: true
+feign:
+  hystrix:
+    enable: true
