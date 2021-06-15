@@ -22,9 +22,9 @@ public class DemoFeignController {
 
     @RequestMapping("/get3")
     @ResponseBody
-    public List get3(Integer id){
+    public String get3(String id){
         System.out.println("DemoFeignController...."+id);
-        return product.get(id);
+        return product.get(id.toString());
     }
 
 }
